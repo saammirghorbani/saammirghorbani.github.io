@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Saam Mirghorbani &middot; Senior Data Scientist</title>
+<meta name="description" content="Selected work by Saam Mirghorbani, a Senior Data Scientist working at the intersection of product growth, experimentation and data products." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy: #1F2A44;
+    --navy-soft: #2E3A57;
+    --ink: #14171F;
+    --muted: #5C6478;
+    --muted-2: #8A92A6;
+    --line: #E6E5DF;
+    --line-soft: #EFEEE8;
+    --bg: #FAF9F4;
+    --card: #FFFFFF;
+    --chip: #F2F1EB;
+    --accent: #B26A3D;
+    --shadow: 0 1px 2px rgba(20, 23, 31, 0.04), 0 6px 24px rgba(20, 23, 31, 0.05);
+    --radius: 14px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a { color: var(--navy); text-decoration: none; border-bottom: 1px solid rgba(31, 42, 68, 0.25); transition: border-color 0.15s ease, color 0.15s ease; }
+  a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 64px 28px 96px;
+  }
+
+  /* ---------------- Top nav ---------------- */
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 56px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .top .mark { font-weight: 600; color: var(--navy); letter-spacing: 0.2px; border: none; }
+  .top nav a { margin-left: 22px; border: none; color: var(--muted); }
+  .top nav a:hover { color: var(--accent); }
+
+  /* ---------------- Hero ---------------- */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 112px;
+    gap: 36px;
+    align-items: start;
+    padding-bottom: 56px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .hero h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(34px, 5vw, 48px);
+    line-height: 1.1;
+    margin: 0 0 14px 0;
+    color: var(--navy);
+    letter-spacing: -0.5px;
+  }
+  .hero .role {
+    font-size: 17px;
+    color: var(--muted);
+    margin: 0 0 22px 0;
+    font-weight: 500;
+  }
+  .hero p.bio {
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--ink);
+    max-width: 60ch;
+    margin: 0;
+  }
+  .hero .meta {
+    margin-top: 22px;
+    font-size: 14px;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+  }
+  .hero .meta span { white-space: nowrap; }
+
+  .photo {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--chip);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--line);
+  }
+  .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  @media (max-width: 640px) {
+    .hero { grid-template-columns: 1fr; }
+    .photo { order: -1; width: 88px; height: 88px; }
+  }
+
+  /* ---------------- Section header ---------------- */
+  .section {
+    margin-top: 64px;
+  }
+  .section-eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: var(--muted-2);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .section h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--navy);
+    margin: 0 0 28px 0;
+    letter-spacing: -0.3px;
+  }
+
+  /* ---------------- Project cards ---------------- */
+  .project {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 28px 30px;
+    margin-bottom: 18px;
+    box-shadow: var(--shadow);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .project:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 2px rgba(20, 23, 31, 0.04), 0 12px 28px rgba(20, 23, 31, 0.07);
+  }
+  .project-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+  .project h3 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--navy);
+    margin: 0;
+    letter-spacing: -0.2px;
+  }
+  .project .when {
+    font-size: 13px;
+    color: var(--muted-2);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .project .domain {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 4px 0 16px 0;
+  }
+  .project p { margin: 0 0 12px 0; color: var(--ink); }
+  .project .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    color: var(--muted);
+    margin-top: 14px;
+    margin-bottom: 4px;
+  }
+  .project ul {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+    color: var(--ink);
+  }
+  .project ul li { margin-bottom: 4px; }
+  .project .stack {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .stack .chip {
+    font-size: 12px;
+    padding: 4px 10px;
+    background: var(--chip);
+    color: var(--navy-soft);
+    border-radius: 999px;
+    font-weight: 500;
+  }
+
+  /* ---------------- Skills ---------------- */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  @media (max-width: 640px) {
+    .skills-grid { grid-template-columns: 1fr; }
+  }
+  .skill-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 20px 22px;
+  }
+  .skill-card h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: var(--navy);
+    letter-spacing: 0.2px;
+    font-weight: 600;
+  }
+  .skill-card .pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .skill-card .pill {
+    font-size: 13px;
+    padding: 4px 10px;
+    background: var(--chip);
+    color: var(--navy-soft);
+    border-radius: 6px;
+    font-weight: 500;
+  }
+
+  /* ---------------- Other work ---------------- */
+  .more {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px 26px;
+  }
+  .more ul {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--ink);
+  }
+  .more ul li { margin-bottom: 8px; }
+  .more ul li strong { color: var(--navy); font-weight: 600; }
+
+  /* ---------------- Background ---------------- */
+  .bg-list {
+    display: grid;
+    gap: 4px;
+  }
+  .bg-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line-soft);
+    align-items: baseline;
+  }
+  .bg-row:last-child { border-bottom: none; }
+  .bg-row .who { color: var(--ink); }
+  .bg-row .who strong { color: var(--navy); }
+  .bg-row .who .what { color: var(--muted); font-size: 14px; display: block; margin-top: 2px; }
+  .bg-row .when { color: var(--muted-2); font-size: 13px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  /* ---------------- Footer ---------------- */
+  footer {
+    margin-top: 72px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  footer a { color: var(--muted); border-bottom-color: rgba(92, 100, 120, 0.25); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="top">
+      <span class="mark"></span>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#background">Background</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Saam Mirghorbani</h1>
+        <p class="role">Senior Data Scientist &middot; Stockholm</p>
+        <p class="bio">
+          I work at the intersection of product growth, experimentation and data products.
+          Most of my time is spent translating ambiguous business questions into
+          measurable impact, building the data tools that make those answers
+          repeatable, and helping teams ship with conviction.
+        </p>
+        <div class="meta">
+          <span>Swedish &amp; English</span>
+          <span>&middot;</span>
+          <span>6+ years across data science, analytics &amp; engineering</span>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="assets/headshot.jpg" alt="Portrait of Saam Mirghorbani" />
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-eyebrow">Selected work</div>
+      <h2>Projects</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Viral Track Detection Platform</h3>
+          <span class="when">2024 – Present</span>
+        </div>
+        <div class="domain">Data product &middot; ML &middot; Owner</div>
+        <p>
+          Built and own an in-house system that detects when tracks are going viral across video and streaming platforms.
+          The platform fuses external usage signals from multiple sources, applies time-series detection to surface
+          breakout candidates early, and feeds prioritized recommendations to commercial and marketing teams.
+        </p>
+
+        <div class="label">Approach</div>
+        <ul>
+          <li>Designed the detection logic and the data model joining heterogeneous platform signals.</li>
+          <li>Iterated the algorithm based on precision and lead-time feedback from the operating teams.</li>
+          <li>Integrated additional sources over time, expanding the share of catalogue with timely coverage.</li>
+        </ul>
+
+        <div class="label">Outcome</div>
+        <ul>
+          <li>Became one of the most actively used data products in the company.</li>
+          <li>In one early case, detection enabled targeted promotion that drove a 10x+ revenue uplift on a single track.</li>
+          <li>Reinforced the company&rsquo;s positioning as a trend-setting catalogue partner.</li>
+        </ul>
+
+        <div class="stack">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">dbt</span>
+          <span class="chip">Airflow</span>
+          <span class="chip">BigQuery</span>
+          <span class="chip">Time-series detection</span>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Free-to-Paid Lifecycle &amp; Activation Strategy</h3>
+          <span class="when">2025 – Present</span>
+        </div>
+        <div class="domain">Product analytics &middot; Experimentation</div>
+        <p>
+          Modeled the full free-to-paid lifecycle for a SaaS funnel, using cohort analysis,
+          retention curves and behavioural segmentation to identify where users either compounded value or quietly fell off.
+          The work reframed the activation strategy and produced a steady pipeline of high-leverage experiments.
+        </p>
+
+        <div class="label">Approach</div>
+        <ul>
+          <li>Decomposed the funnel into acquisition, activation, retention and monetization, with an explicit free-tier loop.</li>
+          <li>Identified an in-product recommender as a previously overlooked driver of day-one retention.</li>
+          <li>Designed and analysed experiments end-to-end: licensing-coverage modal, onboarding-checklist iteration, onboarding-flow redesign, user profiling.</li>
+        </ul>
+
+        <div class="label">Outcome</div>
+        <ul>
+          <li>Reshaped the activation strategy around the free-tier experience as the primary growth lever.</li>
+          <li>Onboarding-flow redesign delivered ~20% activation improvement.</li>
+          <li>Licensing-coverage modal produced a 5x lift in plan upgrades and a meaningful upgrade-revenue contribution.</li>
+          <li>Set company-level OKR Key Results and built the weekly-cohort dashboard leadership now uses as the source of truth.</li>
+        </ul>
+
+        <div class="stack">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Hex</span>
+          <span class="chip">Looker</span>
+          <span class="chip">A/B testing</span>
+          <span class="chip">Cohort analysis</span>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Pricing Strategy for a New Low-Tier Plan</h3>
+          <span class="when">2025 – 2026</span>
+        </div>
+        <div class="domain">Pricing &middot; Causal &amp; behavioural analysis</div>
+        <p>
+          Led the analytical case for introducing a lower-priced subscription tier. Combined behavioural segmentation of
+          churners, first-time payers and free-tier returners with a cannibalisation sensitivity analysis to give pricing
+          strategy a quantitative basis.
+        </p>
+
+        <div class="label">Approach</div>
+        <ul>
+          <li>Segmented users by willingness-to-pay signals derived from past plan changes and engagement patterns.</li>
+          <li>Estimated the upside (recoverable churners, expanded TAM at the new price point) and downside (cannibalisation of the existing tier).</li>
+          <li>Modelled price-sensitivity scenarios so the team could see how outcomes shifted with assumptions.</li>
+        </ul>
+
+        <div class="label">Outcome</div>
+        <ul>
+          <li>Pricing decision-makers moved forward with a data-grounded view of net impact rather than gross uplift.</li>
+          <li>The framework became the reference for subsequent pricing discussions on adjacent plans.</li>
+        </ul>
+
+        <div class="stack">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Statistical modelling</span>
+          <span class="chip">Segmentation</span>
+          <span class="chip">Sensitivity analysis</span>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Referral Program Funnel Analysis</h3>
+          <span class="when">2025 – 2026</span>
+        </div>
+        <div class="domain">Funnel analysis &middot; Acquisition strategy</div>
+        <p>
+          Sized the referral loop as a potential lower-cost alternative to paid acquisition and pressure-tested
+          the funnel assumptions before product and engineering committed resources. The work decomposed the loop
+          into a MECE funnel (awareness, join, copy link, click, signup, pay), quantified each stage with conversion
+          rates and confidence intervals, and segmented referrers so the team could see where reach and downstream
+          conversion were actually coming from.
+        </p>
+
+        <div class="label">Approach</div>
+        <ul>
+          <li>Funnel decomposition with conversion rates and 95% CIs at every stage, sliced by cohort month and user segment.</li>
+          <li>Compared subscribers and non-subscribers as referrer types, including reach, click-through, and downstream conversion of referred users.</li>
+          <li>Distribution analysis of referrals per active referrer to test for power-law concentration.</li>
+        </ul>
+
+        <div class="label">Outcome</div>
+        <ul>
+          <li>Identified awareness-to-join as the largest, most addressable drop-off and reframed the program around a global CTA test rather than targeted in-product nudges.</li>
+          <li>Quantified a long maturation cycle, giving the team the right early-read metric to use during experimentation.</li>
+          <li>Findings shaped the direction of the program and the design of the first awareness experiment.</li>
+        </ul>
+
+        <div class="stack">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Hex</span>
+          <span class="chip">Funnel analysis</span>
+          <span class="chip">Cohort analysis</span>
+          <span class="chip">Segmentation</span>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>LLM-Powered Customer Feedback Summarizer</h3>
+          <span class="when">2025</span>
+        </div>
+        <div class="domain">NLP &middot; LLMs &middot; Internal tooling</div>
+        <p>
+          Built a Slack bot that ingests raw customer feedback, clusters it into emergent themes and posts
+          short, quote-grounded summaries to the channels where decisions actually happen.
+          The goal was to give Customer Service and Product a faster, lower-effort read on what users were
+          actually saying, without anyone having to manually triage tickets.
+        </p>
+
+        <div class="label">Approach</div>
+        <ul>
+          <li>Pipeline that pulls feedback from source systems, embeds it, clusters by semantic similarity, and routes summaries to Slack.</li>
+          <li>Used an LLM for theme labelling and quote selection, with light guardrails so the output stayed factual rather than generative.</li>
+          <li>Iterated based on user feedback inside the company: what was useful, what was noise, what was missing.</li>
+        </ul>
+
+        <div class="label">Outcome</div>
+        <ul>
+          <li>Adopted by Customer Service and product teams as a regular signal in roadmap conversations.</li>
+          <li>Replaced ad-hoc spreadsheets and manual reads of ticket queues with a recurring, structured view.</li>
+        </ul>
+
+        <div class="stack">
+          <span class="chip">Python</span>
+          <span class="chip">LLMs</span>
+          <span class="chip">Embeddings</span>
+          <span class="chip">Clustering</span>
+          <span class="chip">Slack API</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-eyebrow">Honorable mentions</div>
+      <h2>Other work</h2>
+      <div class="more">
+        <ul>
+          <li><strong>Time-to-claim analysis on third-party uploads.</strong> Quantified the relationship between claim latency and revenue, identifying the window of maximum opportunity for high-value content capture.</li>
+          <li><strong>Internal experimentation app.</strong> Continuously evolved the in-house experimentation tool with new metrics, an interaction-effect component and UX work that made results readable for non-analysts.</li>
+          <li><strong>Looker model refactor.</strong> Reduced BigQuery costs by 40%+ on the highest-cost models while enabling flexible reporting across time ranges.</li>
+          <li><strong>Supplier earnings model.</strong> Built a comprehensive earnings model and dashboard that strengthened sales narratives and the value proposition.</li>
+          <li><strong>Acquisition forecasting.</strong> Forecasted streams and revenue for an acquisition evaluation, identifying significant overvaluation risk.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-eyebrow">Tech stack</div>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Languages</h4>
+          <div class="pills">
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">LookML</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Data Science &amp; ML</h4>
+          <div class="pills">
+            <span class="pill">A/B testing</span>
+            <span class="pill">Causal inference</span>
+            <span class="pill">Statistical modelling</span>
+            <span class="pill">Forecasting</span>
+            <span class="pill">Segmentation</span>
+            <span class="pill">Classification</span>
+            <span class="pill">NLP / LLMs</span>
+            <span class="pill">Deep learning</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Analysis &amp; Viz</h4>
+          <div class="pills">
+            <span class="pill">Hex</span>
+            <span class="pill">Looker</span>
+            <span class="pill">Mixpanel</span>
+            <span class="pill">Tableau</span>
+            <span class="pill">Data Studio</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Data Engineering</h4>
+          <div class="pills">
+            <span class="pill">dbt</span>
+            <span class="pill">BigQuery</span>
+            <span class="pill">Snowflake</span>
+            <span class="pill">Airflow</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Cloud &amp; Infra</h4>
+          <div class="pills">
+            <span class="pill">GCP</span>
+            <span class="pill">AWS</span>
+            <span class="pill">Terraform</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Ways of working</h4>
+          <div class="pills">
+            <span class="pill">Product partnership</span>
+            <span class="pill">Stakeholder enablement</span>
+            <span class="pill">Mentoring</span>
+            <span class="pill">Cross-functional leadership</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="background">
+      <div class="section-eyebrow">Career</div>
+      <h2>Background</h2>
+      <div class="bg-list">
+        <div class="bg-row">
+          <div class="who">
+            <strong>Senior Data Scientist</strong>
+            <span class="what">Music tech &middot; Stockholm. Product growth, experimentation, data products.</span>
+          </div>
+          <span class="when">2025 – Present</span>
+        </div>
+        <div class="bg-row">
+          <div class="who">
+            <strong>Data Scientist</strong>
+            <span class="what">Music tech &middot; Stockholm. Viral detection, forecasting, BI infrastructure.</span>
+          </div>
+          <span class="when">2024 – 2025</span>
+        </div>
+        <div class="bg-row">
+          <div class="who">
+            <strong>Data Scientist / Analytics Engineer / Data Engineer</strong>
+            <span class="what">Consultant across three client engagements (transportation, music tech, medtech).</span>
+          </div>
+          <span class="when">2021 – 2024</span>
+        </div>
+        <div class="bg-row">
+          <div class="who">
+            <strong>Data Scientist / Mobile &amp; Fullstack Developer</strong>
+            <span class="what">Network camera technology company &middot; Lund. Predictive testing, internal analytics, mobile apps.</span>
+          </div>
+          <span class="when">2017 – 2021</span>
+        </div>
+        <div class="bg-row">
+          <div class="who">
+            <strong>M.Sc. Computer Science and Engineering</strong>
+            <span class="what">Lund University (LTH), major in Machine Learning, Images and Computer Graphics. Exchange at UNSW Sydney.</span>
+          </div>
+          <span class="when">2015 – 2021</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>&copy; <span id="year">2026</span> Saam Mirghorbani</span>
+
+    </footer>
+
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
