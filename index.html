@@ -215,6 +215,37 @@
     font-weight: 500;
   }
 
+  /* ---------------- Project: impact card ---------------- */
+  .project .impact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 26px;
+    margin: 16px 0 18px 0;
+    padding: 14px 18px;
+    background: var(--line-soft);
+    border-radius: 10px;
+    border-left: 3px solid var(--accent);
+  }
+  .project .impact .stat {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .project .impact .stat .num {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.15;
+    letter-spacing: -0.2px;
+  }
+  .project .impact .stat .what {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 2px;
+    letter-spacing: 0.2px;
+  }
+
   /* ---------------- Skills ---------------- */
   .skills-grid {
     display: grid;
@@ -344,10 +375,18 @@
         </div>
         <div class="domain">Data product &middot; ML &middot; Owner</div>
         <p>
-          Built and own an in-house system that detects when tracks are going viral across video and streaming platforms.
-          The platform fuses external usage signals from multiple sources, applies time-series detection to surface
-          breakout candidates early, and feeds prioritized recommendations to commercial and marketing teams.
+          Catalogue performance moves fast across video and streaming, and spotting breakout
+          tracks late means missing the commercial window. Built and own an in-house, end-to-end system
+          that fuses external usage signals from multiple platforms, applies time-series detection to surface
+          breakout candidates early, and feeds prioritised recommendations to commercial and marketing teams
+          in production.
         </p>
+
+        <div class="impact">
+          <div class="stat"><span class="num">10x+</span><span class="what">revenue lift on an early detection</span></div>
+          <div class="stat"><span class="num">Top-used</span><span class="what">internal data product</span></div>
+          <div class="stat"><span class="num">Multi-platform</span><span class="what">video &amp; streaming sources fused</span></div>
+        </div>
 
         <div class="label">Approach</div>
         <ul>
@@ -380,24 +419,33 @@
         </div>
         <div class="domain">Product analytics &middot; Experimentation</div>
         <p>
-          Modeled the full free-to-paid lifecycle for a SaaS funnel, using cohort analysis,
-          retention curves and behavioural segmentation to identify where users either compounded value or quietly fell off.
-          The work reframed the activation strategy and produced a steady pipeline of high-leverage experiments.
+          Free-to-paid was the single largest growth lever, but the funnel was unclear and activation strategy was
+          reactive. Modelled the full lifecycle using cohort analysis, retention curves and behavioural segmentation
+          to identify where users either compounded value or quietly fell off, reframed activation around the
+          free-tier experience, and gave leadership the weekly-cohort dashboard they now use as the source of truth.
         </p>
+
+        <div class="impact">
+          <div class="stat"><span class="num">5x</span><span class="what">lift in plan upgrades (licensing modal)</span></div>
+          <div class="stat"><span class="num">~20%</span><span class="what">activation improvement (onboarding redesign)</span></div>
+          <div class="stat"><span class="num">~2x</span><span class="what">onboarding-checklist open rate</span></div>
+          <div class="stat"><span class="num">+ leads</span><span class="what">qualified enterprise sales pipeline</span></div>
+        </div>
 
         <div class="label">Approach</div>
         <ul>
           <li>Decomposed the funnel into acquisition, activation, retention and monetization, with an explicit free-tier loop.</li>
-          <li>Identified an in-product recommender as a previously overlooked driver of day-one retention.</li>
-          <li>Designed and analysed experiments end-to-end: licensing-coverage modal, onboarding-checklist iteration, onboarding-flow redesign, user profiling.</li>
+          <li>Identified an in-product recommender as a previously overlooked driver of day-one retention, prioritising it inside the activation experience.</li>
+          <li>Designed and analysed experiments end-to-end: licensing-coverage modal, onboarding-checklist iteration, onboarding-flow redesign, and user profiling that fed qualified enterprise leads to sales.</li>
         </ul>
 
         <div class="label">Outcome</div>
         <ul>
           <li>Reshaped the activation strategy around the free-tier experience as the primary growth lever.</li>
-          <li>Onboarding-flow redesign delivered ~20% activation improvement.</li>
+          <li>Onboarding-flow redesign delivered ~20% activation improvement; checklist iteration roughly doubled open rate and produced hundreds of new paying users per month.</li>
           <li>Licensing-coverage modal produced a 5x lift in plan upgrades and a meaningful upgrade-revenue contribution.</li>
-          <li>Set company-level OKR Key Results and built the weekly-cohort dashboard leadership now uses as the source of truth.</li>
+          <li>User profiling significantly increased qualified enterprise sales leads.</li>
+          <li>Set company-level OKR metrics and targets and built the weekly-cohort dashboard leadership now uses as the source of truth for KR progress.</li>
         </ul>
 
         <div class="stack">
@@ -417,10 +465,16 @@
         </div>
         <div class="domain">Pricing &middot; Causal &amp; behavioural analysis</div>
         <p>
-          Led the analytical case for introducing a lower-priced subscription tier. Combined behavioural segmentation of
-          churners, first-time payers and free-tier returners with a cannibalisation sensitivity analysis to give pricing
-          strategy a quantitative basis.
+          A lower-priced tier promised to recover churners and expand reach, but risked cannibalising existing
+          revenue. Led the analytical case by combining behavioural segmentation of churners, first-time payers and
+          free-tier returners with a cannibalisation sensitivity analysis, grounding the launch decision in net
+          impact rather than gross uplift.
         </p>
+
+        <div class="impact">
+          <div class="stat"><span class="num">Net impact</span><span class="what">replaced gross-uplift intuition</span></div>
+          <div class="stat"><span class="num">Adopted</span><span class="what">as the reference for adjacent pricing decisions</span></div>
+        </div>
 
         <div class="label">Approach</div>
         <ul>
@@ -449,14 +503,19 @@
           <h3>Referral Program Funnel Analysis</h3>
           <span class="when">2025 – 2026</span>
         </div>
-        <div class="domain">Funnel analysis &middot; Acquisition strategy</div>
+        <div class="domain">Marketing &amp; acquisition &middot; Funnel analysis</div>
         <p>
-          Sized the referral loop as a potential lower-cost alternative to paid acquisition and pressure-tested
-          the funnel assumptions before product and engineering committed resources. The work decomposed the loop
-          into a MECE funnel (awareness, join, copy link, click, signup, pay), quantified each stage with conversion
-          rates and confidence intervals, and segmented referrers so the team could see where reach and downstream
-          conversion were actually coming from.
+          Referrals were a candidate channel for lower-CAC growth, but the loop had never been pressure-tested.
+          Decomposed it into a MECE funnel (awareness, join, copy link, click, signup, pay), quantified each
+          stage with conversion rates and confidence intervals, and segmented referrers so the team could see where
+          reach and downstream conversion were actually coming from.
         </p>
+
+        <div class="impact">
+          <div class="stat"><span class="num">Awareness-to-join</span><span class="what">identified as the largest drop-off</span></div>
+          <div class="stat"><span class="num">Global CTA</span><span class="what">test design replaced targeted nudges</span></div>
+          <div class="stat"><span class="num">Early-read</span><span class="what">metric defined for a long maturation cycle</span></div>
+        </div>
 
         <div class="label">Approach</div>
         <ul>
@@ -489,11 +548,16 @@
         </div>
         <div class="domain">NLP &middot; LLMs &middot; Internal tooling</div>
         <p>
-          Built a Slack bot that ingests raw customer feedback, clusters it into emergent themes and posts
-          short, quote-grounded summaries to the channels where decisions actually happen.
-          The goal was to give Customer Service and Product a faster, lower-effort read on what users were
-          actually saying, without anyone having to manually triage tickets.
+          Customer feedback was scattered across systems and read manually, so signal was lost between ticket
+          queues and roadmap conversations. Built and deployed an internal Slack bot that ingests raw feedback,
+          clusters it into emergent themes and posts short, quote-grounded summaries to the channels where
+          decisions actually happen.
         </p>
+
+        <div class="impact">
+          <div class="stat"><span class="num">Adopted</span><span class="what">by Customer Service and Product teams</span></div>
+          <div class="stat"><span class="num">Recurring</span><span class="what">structured view replaced manual ticket screening</span></div>
+        </div>
 
         <div class="label">Approach</div>
         <ul>
