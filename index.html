@@ -348,15 +348,15 @@
         <h1>Saam Mirghorbani</h1>
         <p class="role">Senior Data Scientist &middot; Stockholm</p>
         <p class="bio">
-          I work at the intersection of product growth, experimentation and data products.
-          Most of my time is spent translating ambiguous business questions into
-          measurable impact, building the data tools that make those answers
-          repeatable, and helping teams ship with conviction.
+          I work at the intersection of product growth, experimentation and data products:
+          Translating ambiguous product questions into measurable decisions,
+          decomposing growth funnels into the levers that actually move conversion and retention,
+          and shipping the data products that make those answers compound across teams.
         </p>
         <div class="meta">
           <span>Swedish &amp; English</span>
           <span>&middot;</span>
-          <span>6+ years across data science, analytics &amp; engineering</span>
+          <span>6+ years across data science, analytics &amp; ML</span>
         </div>
       </div>
       <div class="photo">
@@ -371,34 +371,36 @@
       <article class="project">
         <div class="project-head">
           <h3>Viral Track Detection Platform</h3>
-          <span class="when">2024 – Present</span>
+          <span class="when">2024 &ndash; Present</span>
         </div>
-        <div class="domain">Data product &middot; ML &middot; Owner</div>
+        <div class="domain">Data product &middot; Time-series detection &middot; Owner</div>
         <p>
-          Catalogue performance moves fast across video and streaming, and spotting breakout
-          tracks late means missing the commercial window. Built and own an in-house, end-to-end system
-          that fuses external usage signals from multiple platforms, applies time-series detection to surface
-          breakout candidates early, and feeds prioritised recommendations to commercial and marketing teams
-          in production.
+          Catalogue performance moves fast across video and streaming, and spotting breakout tracks late
+          means missing the commercial window. Built and shipped an in-house cross-platform trend detector
+          that fuses streaming and view signals from YouTube, Tiktok and Spotify, applies trend detection
+          to surface breakouts early, and routes prioritised candidates to commercial and music-acquisition
+          teams. The platform has been running continuously since launch and grew into one of the company&rsquo;s
+          most actively used data products.
         </p>
 
         <div class="impact">
-          <div class="stat"><span class="num">10x+</span><span class="what">revenue lift on an early detection</span></div>
-          <div class="stat"><span class="num">Top-used</span><span class="what">internal data product</span></div>
-          <div class="stat"><span class="num">Multi-platform</span><span class="what">video &amp; streaming sources fused</span></div>
+          <div class="stat"><span class="num">Major</span><span class="what">revenue uplift from early-detected breakouts</span></div>
+          <div class="stat"><span class="num">Most-used</span><span class="what">internal data product at the company</span></div>
+          <div class="stat"><span class="num">Multi-platform</span><span class="what">YouTube, Spotify, Amazon Music</span></div>
         </div>
 
         <div class="label">Approach</div>
         <ul>
-          <li>Designed the detection logic and the data model joining heterogeneous platform signals.</li>
-          <li>Iterated the algorithm based on precision and lead-time feedback from the operating teams.</li>
+          <li>Designed the detection method: short-term (7-day) versus long-term (28-day) moving-average trend scores, gated by a multi-platform threshold so that platform-specific noise is filtered out.</li>
+          <li>Built the data model joining heterogeneous platform signals at daily granularity.</li>
+          <li>Iterated the algorithm based on precision and lead-time feedback from commercial and music-acquisition teams.</li>
           <li>Integrated additional sources over time, expanding the share of catalogue with timely coverage.</li>
         </ul>
 
         <div class="label">Outcome</div>
         <ul>
-          <li>Became one of the most actively used data products in the company.</li>
-          <li>In one early case, detection enabled targeted promotion that drove a 10x+ revenue uplift on a single track.</li>
+          <li>Early detections have enabled targeted promotion that delivered material revenue uplift on surfaced tracks.</li>
+          <li>Became one of the most actively used data products in the company and continues to surface breakout candidates across the catalogue.</li>
           <li>Reinforced the company&rsquo;s positioning as a trend-setting catalogue partner.</li>
         </ul>
 
@@ -406,46 +408,45 @@
           <span class="chip">Python</span>
           <span class="chip">SQL</span>
           <span class="chip">dbt</span>
-          <span class="chip">Airflow</span>
           <span class="chip">BigQuery</span>
+          <span class="chip">Hex</span>
           <span class="chip">Time-series detection</span>
         </div>
       </article>
 
       <article class="project">
         <div class="project-head">
-          <h3>Free-to-Paid Lifecycle &amp; Activation Strategy</h3>
-          <span class="when">2025 – Present</span>
+          <h3>Free-to-Paid Lifecycle &amp; Growth Experimentation</h3>
+          <span class="when">2025 &ndash; Present</span>
         </div>
-        <div class="domain">Product analytics &middot; Experimentation</div>
+        <div class="domain">Lifecycle modelling &middot; A/B testing &middot; Strategy</div>
         <p>
-          Free-to-paid was the single largest growth lever, but the funnel was unclear and activation strategy was
-          reactive. Modelled the full lifecycle using cohort analysis, retention curves and behavioural segmentation
-          to identify where users either compounded value or quietly fell off, reframed activation around the
-          free-tier experience, and gave leadership the weekly-cohort dashboard they now use as the source of truth.
+          Free-to-paid was a major growth lever, but the funnel was unclear and the activation strategy was
+          reactive. Modelled the full lifecycle to identify where users compound value or quietly fall off,
+          analysed the portfolio of experiments that test those levers, and built the metrics framework
+          leadership now uses as the source of truth for growth progress.
         </p>
 
         <div class="impact">
-          <div class="stat"><span class="num">5x</span><span class="what">lift in plan upgrades (licensing modal)</span></div>
-          <div class="stat"><span class="num">~20%</span><span class="what">activation improvement (onboarding redesign)</span></div>
-          <div class="stat"><span class="num">~2x</span><span class="what">onboarding-checklist open rate</span></div>
-          <div class="stat"><span class="num">+ leads</span><span class="what">qualified enterprise sales pipeline</span></div>
+          <div class="stat"><span class="num">Multi-x</span><span class="what">lifts on upgrade and engagement experiments</span></div>
+          <div class="stat"><span class="num">Quantified</span><span class="what">monetization value of a key activation step</span></div>
+          <div class="stat"><span class="num">Source of truth</span><span class="what">KR-tracking framework adopted by leadership</span></div>
         </div>
 
         <div class="label">Approach</div>
         <ul>
-          <li>Decomposed the funnel into acquisition, activation, retention and monetization, with an explicit free-tier loop.</li>
-          <li>Identified an in-product recommender as a previously overlooked driver of day-one retention, prioritising it inside the activation experience.</li>
-          <li>Designed and analysed experiments end-to-end: licensing-coverage modal, onboarding-checklist iteration, onboarding-flow redesign, and user profiling that fed qualified enterprise leads to sales.</li>
+          <li>Diagnosed the free-to-paid lifecycle through cohort retention, funnel decomposition and behavioural segmentation across acquisition channels; identified first-session activation as the primary free-to-paid driver.</li>
+          <li>Used LLM-based categorisation of free-text cancellation responses to surface pricing as a hidden churn driver previously obscured by the canned reason categories.</li>
+          <li>Led analysis on a portfolio of experiments spanning acquisition, activation, retention and monetization, covering signup-flow iterations, onboarding optimisation, and a structural funnel test that quantified the value of a key activation step.</li>
+          <li>Reanalyzed an inconclusive recommender experiment to isolate first-session engagement uplift as the load-bearing behavioural signal, informing follow-up prioritization in the activation flow.</li>
+          <li>Derived business-unit KR targets from a closed-form conversion model linking first-session payment, 7-day return and a late-conversion uplift factor; built the weekly-cohort tracking dashboard that became leadership&rsquo;s source of truth for KR progress.</li>
         </ul>
 
         <div class="label">Outcome</div>
         <ul>
-          <li>Reshaped the activation strategy around the free-tier experience as the primary growth lever.</li>
-          <li>Onboarding-flow redesign delivered ~20% activation improvement; checklist iteration roughly doubled open rate and produced hundreds of new paying users per month.</li>
-          <li>Licensing-coverage modal produced a 5x lift in plan upgrades and a meaningful upgrade-revenue contribution.</li>
-          <li>User profiling significantly increased qualified enterprise sales leads.</li>
-          <li>Set company-level OKR metrics and targets and built the weekly-cohort dashboard leadership now uses as the source of truth for KR progress.</li>
+          <li>Reshaped activation priorities around the free-tier experience as the primary growth lever.</li>
+          <li>The growth-experiments portfolio drove product decisions across all four funnel stages, with multi-x lifts on the strongest upgrade and engagement levers and a quantified monetization read on a previously-unmeasured activation step.</li>
+          <li>KR-tracking dashboard adopted as the canonical view leadership uses to read growth progress.</li>
         </ul>
 
         <div class="stack">
@@ -455,80 +456,84 @@
           <span class="chip">Looker</span>
           <span class="chip">A/B testing</span>
           <span class="chip">Cohort analysis</span>
+          <span class="chip">LLMs</span>
         </div>
       </article>
 
       <article class="project">
         <div class="project-head">
-          <h3>Pricing Strategy for a New Low-Tier Plan</h3>
-          <span class="when">2025 – 2026</span>
+          <h3>Pricing &amp; Plan-Strategy Framework</h3>
+          <span class="when">2025 &ndash; 2026</span>
         </div>
-        <div class="domain">Pricing &middot; Causal &amp; behavioural analysis</div>
+        <div class="domain">Pricing &middot; Behavioural analysis &middot; Scenario modelling</div>
         <p>
-          A lower-priced tier promised to recover churners and expand reach, but risked cannibalising existing
-          revenue. Led the analytical case by combining behavioural segmentation of churners, first-time payers and
-          free-tier returners with a cannibalisation sensitivity analysis, grounding the launch decision in net
-          impact rather than gross uplift.
+          Plan-strategy changes look attractive on gross uplift but routinely lose money on cannibalisation.
+          Built the analytical framework that pairs behavioural feature-segmentation with a cannibalisation
+          and revenue-impact model, so plan-design decisions get evaluated on net impact rather than headline
+          conversion.
         </p>
 
         <div class="impact">
-          <div class="stat"><span class="num">Net impact</span><span class="what">replaced gross-uplift intuition</span></div>
-          <div class="stat"><span class="num">Adopted</span><span class="what">as the reference for adjacent pricing decisions</span></div>
+          <div class="stat"><span class="num">Behavioural</span><span class="what">feature-cap thresholds derived from CDF-gap analysis</span></div>
+          <div class="stat"><span class="num">Cross-exp</span><span class="what">synthesis of adjacent pricing tests into a single model</span></div>
+          <div class="stat"><span class="num">Net-impact</span><span class="what">scenario modelling, including price-floor identification</span></div>
         </div>
 
         <div class="label">Approach</div>
         <ul>
-          <li>Segmented users by willingness-to-pay signals derived from past plan changes and engagement patterns.</li>
-          <li>Estimated the upside (recoverable churners, expanded TAM at the new price point) and downside (cannibalisation of the existing tier).</li>
-          <li>Modelled price-sensitivity scenarios so the team could see how outcomes shifted with assumptions.</li>
+          <li>Cohort comparison of converters versus churners on adjacent paid tiers; CDF-gap analysis on usage features to identify feature-cap thresholds that maximise behavioural separation.</li>
+          <li>Synthesised downgrade and conversion rates across adjacent pricing experiments to model how a new tier would interact with the existing pricing line-up.</li>
+          <li>Applied a linear price-elasticity assumption to model net revenue impact across scenarios and identify the price floor below which a plan turns net-negative.</li>
         </ul>
 
         <div class="label">Outcome</div>
         <ul>
-          <li>Pricing decision-makers moved forward with a data-grounded view of net impact rather than gross uplift.</li>
-          <li>The framework became the reference for subsequent pricing discussions on adjacent plans.</li>
+          <li>Produced a defensible framework for evaluating plan-design and pricing changes on net rather than gross impact.</li>
+          <li>Adopted as the reference for subsequent pricing discussions across adjacent plans.</li>
         </ul>
 
         <div class="stack">
           <span class="chip">Python</span>
           <span class="chip">SQL</span>
           <span class="chip">Statistical modelling</span>
-          <span class="chip">Segmentation</span>
-          <span class="chip">Sensitivity analysis</span>
+          <span class="chip">CDF analysis</span>
+          <span class="chip">Sensitivity modelling</span>
         </div>
       </article>
 
       <article class="project">
         <div class="project-head">
           <h3>Referral Program Funnel Analysis</h3>
-          <span class="when">2025 – 2026</span>
+          <span class="when">2026</span>
         </div>
-        <div class="domain">Marketing &amp; acquisition &middot; Funnel analysis</div>
+        <div class="domain">Acquisition &middot; Funnel analysis &middot; Concentration analysis</div>
         <p>
           Referrals were a candidate channel for lower-CAC growth, but the loop had never been pressure-tested.
-          Decomposed it into a MECE funnel (awareness, join, copy link, click, signup, pay), quantified each
-          stage with conversion rates and confidence intervals, and segmented referrers so the team could see where
-          reach and downstream conversion were actually coming from.
+          Decomposed it into a MECE funnel, quantified each stage with conversion rates and confidence intervals,
+          and used Lorenz-curve concentration analysis to surface where the value actually lives. Then sized the
+          addressable opportunity and recommended the first experiment.
         </p>
 
         <div class="impact">
-          <div class="stat"><span class="num">Awareness-to-join</span><span class="what">identified as the largest drop-off</span></div>
-          <div class="stat"><span class="num">Global CTA</span><span class="what">test design replaced targeted nudges</span></div>
-          <div class="stat"><span class="num">Early-read</span><span class="what">metric defined for a long maturation cycle</span></div>
+          <div class="stat"><span class="num">Large</span><span class="what">untapped long-tenure subscriber pool identified as a CRM target</span></div>
+          <div class="stat"><span class="num">Gini 0.97</span><span class="what">revenue concentration revealing a power-law referrer distribution</span></div>
+          <div class="stat"><span class="num">Awareness</span><span class="what">identified as the dominant lever for free users</span></div>
         </div>
 
         <div class="label">Approach</div>
         <ul>
-          <li>Funnel decomposition with conversion rates and 95% CIs at every stage, sliced by cohort month and user segment.</li>
-          <li>Compared subscribers and non-subscribers as referrer types, including reach, click-through, and downstream conversion of referred users.</li>
-          <li>Distribution analysis of referrals per active referrer to test for power-law concentration.</li>
+          <li>MECE funnel decomposition (awareness, join, copy link, click, signup, pay) with conversion rates and 95% confidence intervals at every stage.</li>
+          <li>Subscriber versus non-subscriber funnel comparison: surfaced the counterintuitive finding that non-subscriber clicks convert at similar rates to subscribers, but reach is far smaller, so the gap is awareness rather than conversion quality.</li>
+          <li>Lorenz-curve and Gini-coefficient concentration analysis on revenue (Gini 0.97) and clicks (Gini 0.87), establishing the power-law structure of referrer value.</li>
+          <li>Tenure, plan and country-tier segmentation identified the highest-yield CRM pool.</li>
+          <li>P90-based experiment-window calculation across the funnel to set the right read points given the long maturation cycle.</li>
         </ul>
 
         <div class="label">Outcome</div>
         <ul>
-          <li>Identified awareness-to-join as the largest, most addressable drop-off and reframed the program around a global CTA test rather than targeted in-product nudges.</li>
-          <li>Quantified a long maturation cycle, giving the team the right early-read metric to use during experimentation.</li>
-          <li>Findings shaped the direction of the program and the design of the first awareness experiment.</li>
+          <li>Identified low awareness as the dominant lever, not conversion quality.</li>
+          <li>Surfaced a large untapped pool of long-tenure subscribers as a high-yield CRM target.</li>
+          <li>Recommended a global awareness test for free users as the first experiment, with P90-anchored read points for early metrics and full end-to-end evaluation.</li>
         </ul>
 
         <div class="stack">
@@ -536,48 +541,50 @@
           <span class="chip">SQL</span>
           <span class="chip">Hex</span>
           <span class="chip">Funnel analysis</span>
-          <span class="chip">Cohort analysis</span>
+          <span class="chip">Lorenz / Gini</span>
           <span class="chip">Segmentation</span>
         </div>
       </article>
 
       <article class="project">
         <div class="project-head">
-          <h3>LLM-Powered Customer Feedback Summarizer</h3>
-          <span class="when">2025</span>
+          <h3>ML for Fleet Fuel Reduction</h3>
+          <span class="when">2023 &ndash; 2024</span>
         </div>
-        <div class="domain">NLP &middot; LLMs &middot; Internal tooling</div>
+        <div class="domain">Machine learning &middot; Explainability &middot; Customer-facing product</div>
         <p>
-          Customer feedback was scattered across systems and read manually, so signal was lost between ticket
-          queues and roadmap conversations. Built and deployed an internal Slack bot that ingests raw feedback,
-          clusters it into emergent themes and posts short, quote-grounded summaries to the channels where
-          decisions actually happen.
+          Fuel is one of the largest operating costs in commercial fleets, and a meaningful share of that
+          cost is driven by behaviours only visible in high-frequency sensor data. Built XGBoost regression
+          models on truck-sensor telemetry to predict fuel consumption from driver behaviour, then used
+          SHAP-based feature importance to translate the model into a driver-facing product that nudges
+          drivers toward the patterns the data showed actually move the needle.
         </p>
 
         <div class="impact">
-          <div class="stat"><span class="num">Adopted</span><span class="what">by Customer Service and Product teams</span></div>
-          <div class="stat"><span class="num">Recurring</span><span class="what">structured view replaced manual ticket screening</span></div>
+          <div class="stat"><span class="num">Up to 5%</span><span class="what">fuel-consumption reduction at fleet level</span></div>
+          <div class="stat"><span class="num">XGBoost + SHAP</span><span class="what">regression with interpretability built in</span></div>
+          <div class="stat"><span class="num">Customer-facing</span><span class="what">shipped inside a driver-facing product</span></div>
         </div>
 
         <div class="label">Approach</div>
         <ul>
-          <li>Pipeline that pulls feedback from source systems, embeds it, clusters by semantic similarity, and routes summaries to Slack.</li>
-          <li>Used an LLM for theme labelling and quote selection, with light guardrails so the output stayed factual rather than generative.</li>
-          <li>Iterated based on user feedback inside the company: what was useful, what was noise, what was missing.</li>
+          <li>Feature engineering on truck-sensor telemetry data: aggregated into driver-behaviour signals at the trip and segment level.</li>
+          <li>XGBoost regression to predict fuel consumption from driver-behaviour features.</li>
+          <li>SHAP-based feature importance to identify the behaviours most strongly tied to higher consumption and translate them into actionable product nudges.</li>
+          <li>Partnered with product and analytics teams to shape how the model&rsquo;s insights surface inside the driver-facing application.</li>
         </ul>
 
         <div class="label">Outcome</div>
         <ul>
-          <li>Adopted by Customer Service and product teams as a regular signal in roadmap conversations.</li>
-          <li>Replaced ad-hoc spreadsheets and manual reads of ticket queues with a recurring, structured view.</li>
+          <li>Insights shaped the design of a driver-facing product rated for up to 5% fuel-consumption reduction at fleet level, depending on adoption and usage.</li>
         </ul>
 
         <div class="stack">
           <span class="chip">Python</span>
-          <span class="chip">LLMs</span>
-          <span class="chip">Embeddings</span>
-          <span class="chip">Clustering</span>
-          <span class="chip">Slack API</span>
+          <span class="chip">XGBoost</span>
+          <span class="chip">SHAP</span>
+          <span class="chip">Feature engineering</span>
+          <span class="chip">Telematics</span>
         </div>
       </article>
     </section>
@@ -587,11 +594,12 @@
       <h2>Other work</h2>
       <div class="more">
         <ul>
-          <li><strong>Time-to-claim analysis on third-party uploads.</strong> Quantified the relationship between claim latency and revenue, identifying the window of maximum opportunity for high-value content capture.</li>
-          <li><strong>Internal experimentation app.</strong> Continuously evolved the in-house experimentation tool with new metrics, an interaction-effect component and UX work that made results readable for non-analysts.</li>
+          <li><strong>LLM-powered customer feedback classifier.</strong> Slack bot that classifies incoming feedback into a fixed taxonomy and surfaces theme summaries to Customer Service and product teams; a deliberate design choice in favour of trend-tracking continuity over emergent clustering.</li>
+          <li><strong>Time-to-claim analysis on third-party uploads.</strong> Quantified lost revenue from late copyright claiming, drove a screener-shift reschedule aligned with upload-time peaks, and recommended halting further investment once the cost outweighed the upside.</li>
+          <li><strong>Cross-experiment interaction detector.</strong> Added to the in-house A/B testing platform: additive and multiplicative null comparisons (Welch&rsquo;s F-test and Z-test) flag when concurrent experiments compound effects in variant combinations.</li>
+          <li><strong>Strategic forecasting.</strong> Time-series forecasting on streaming and revenue data to support strategic evaluation work.</li>
           <li><strong>Looker model refactor.</strong> Reduced BigQuery costs by 40%+ on the highest-cost models while enabling flexible reporting across time ranges.</li>
-          <li><strong>Supplier earnings model.</strong> Built a comprehensive earnings model and dashboard that strengthened sales narratives and the value proposition.</li>
-          <li><strong>Acquisition forecasting.</strong> Forecasted streams and revenue for an acquisition evaluation, identifying significant overvaluation risk.</li>
+          <li><strong>M.Sc. thesis at Axis Communications.</strong> Binary classification model (tree-based and SVM, with K-means feature engineering) integrated into the CI pipeline. Cut regression-testing time by 50% while catching 90%+ of test failures.</li>
         </ul>
       </div>
     </section>
@@ -611,14 +619,17 @@
         <div class="skill-card">
           <h4>Data Science &amp; ML</h4>
           <div class="pills">
-            <span class="pill">A/B testing</span>
-            <span class="pill">Causal inference</span>
+            <span class="pill">A/B testing &amp; experimentation</span>
+            <span class="pill">Experiment synthesis</span>
+            <span class="pill">Funnel &amp; conversion analysis</span>
+            <span class="pill">Cohort retention analysis</span>
+            <span class="pill">Pricing &amp; scenario modelling</span>
             <span class="pill">Statistical modelling</span>
+            <span class="pill">Causal inference</span>
             <span class="pill">Forecasting</span>
-            <span class="pill">Segmentation</span>
-            <span class="pill">Classification</span>
+            <span class="pill">Clustering &amp; segmentation</span>
+            <span class="pill">Classification &amp; regression</span>
             <span class="pill">NLP / LLMs</span>
-            <span class="pill">Deep learning</span>
           </div>
         </div>
         <div class="skill-card">
@@ -667,37 +678,37 @@
         <div class="bg-row">
           <div class="who">
             <strong>Senior Data Scientist</strong>
-            <span class="what">Music tech &middot; Stockholm. Product growth, experimentation, data products.</span>
+            <span class="what">Music tech &middot; Stockholm. Product growth, experimentation, in-product data products.</span>
           </div>
-          <span class="when">2025 – Present</span>
+          <span class="when">2025 &ndash; Present</span>
         </div>
         <div class="bg-row">
           <div class="who">
             <strong>Data Scientist</strong>
-            <span class="what">Music tech &middot; Stockholm. Viral detection, forecasting, BI infrastructure.</span>
+            <span class="what">Music tech &middot; Stockholm. Viral detection, forecasting, internal data products.</span>
           </div>
-          <span class="when">2024 – 2025</span>
+          <span class="when">2024 &ndash; 2025</span>
         </div>
         <div class="bg-row">
           <div class="who">
             <strong>Data Scientist / Analytics Engineer / Data Engineer</strong>
             <span class="what">Consultant across three client engagements (transportation, music tech, medtech).</span>
           </div>
-          <span class="when">2021 – 2024</span>
+          <span class="when">2021 &ndash; 2024</span>
         </div>
         <div class="bg-row">
           <div class="who">
-            <strong>Data Scientist / Mobile &amp; Fullstack Developer</strong>
-            <span class="what">Network camera technology company &middot; Lund. Predictive testing, internal analytics, mobile apps.</span>
+            <strong>Part-time Data Analyst / Data Scientist</strong>
+            <span class="what">Network camera technology &middot; Lund. Clustering and user-flow analysis, dashboards, statistical analysis (concurrent with M.Sc.).</span>
           </div>
-          <span class="when">2017 – 2021</span>
+          <span class="when">2017 &ndash; 2020</span>
         </div>
         <div class="bg-row">
           <div class="who">
             <strong>M.Sc. Computer Science and Engineering</strong>
-            <span class="what">Lund University (LTH), major in Machine Learning, Images and Computer Graphics. Exchange at UNSW Sydney.</span>
+            <span class="what">Lund University (LTH), major in Machine Learning, Images and Computer Graphics. Exchange semester at UNSW Sydney.</span>
           </div>
-          <span class="when">2015 – 2021</span>
+          <span class="when">2015 &ndash; 2021</span>
         </div>
       </div>
     </section>
